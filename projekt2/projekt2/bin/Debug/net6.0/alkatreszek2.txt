@@ -1,0 +1,10 @@
+processzor;a;b;10080
+alaplap;g;h;50000
+memória;k;j;70000
+grafikuskártya;l;g;8000
+hdd;h;k;7000
+ssd;h;z;67575
+monitor;á;m;5777
+egér;mh;ft;6536
+billentyűzet;mgh;gh;344745
+integrált;hfkf;gjfg;52566
