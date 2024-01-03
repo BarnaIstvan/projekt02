@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Alkatrészek leírása</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Alkatrészek leírása</h1>
+    <h2>Processzorok:</h2>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRgG8LU7Hl1c22JfQmQc9jlyUBJhEbohzP-wxVM0uKaDN9rF1JXGocOeR0USRJbiIiUplosCBKdhLV3Q7gX14tKJfFB_m1617Yedw-VsdktnJsx_ECsjVhN&usqp=CAE"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AMD Ryzen 3 4100 Processzor</h5>
+          <p class="card-text">24 790 Ft</p>
+          <a onclick="display_processor_details(1)" href="#" class="btn btn-primary">Részletek</a>
+          <a onclick="processor_compare(1)" href="#" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Processzor1"></div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTH8umwfu6xtcpoar8CXlr6TPXFoGyzd_Wdr2AWSIaF6oty2NLlJv3_E7O9oG6-WCTnnPQ7H5hyWxmmXdUWSdbezn19hLohJB8yngOV4NlcpzFcFh_PRSoV&usqp=CAE"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Amd Ryzen 5 4500 Processzor</h5>
+          <p class="card-text">31 990 Ft</p>
+          <a onclick="display_processor_details(2)" href="#" class="btn btn-primary">Részletek</a>
+          <a onclick="processor_compare(2)" href="#" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Processzor2"></div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR82y__5ZkCFBuN2kP-XShQfWlq-o94ooXyUv7s5qnJZAhxw9PZa5EJBH2RYSl2nWbLMEdncYYoineKZC1vOU5sFJBodEFYXTuAodZU-fk&usqp=CAE"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AMD Ryzen 7 5700X Processzor</h5>
+          <p class="card-text">77 240 Ft</p>
+          <a onclick="display_processor_details(3)" href="#" class="btn btn-primary">Részletek</a>
+          <a onclick="processor_compare(3)" href="#" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Processzor3"></div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT97jFi2tTbjysNxG9sYL-E8JtutPsiNCXHbnTjjlwraMnIM4ByN-8FBK5Zcnn2MZk9MbU4mh7XmEDud9uyXtHPscLh_KnDagUc3pyXNKE&usqp=CAE"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AMD Ryzen 9 5900X Processzor</h5>
+          <p class="card-text">119 390 Ft</p>
+          <a onclick="display_processor_details(4)" href="#" class="btn btn-primary">Részletek</a>
+          <a onclick="processor_compare(4)" href="#" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Processzor4"></div>
+        </div>
+      </div>
+    </div>
+    <h2>Videókártyák:</h2>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRBBk5vGqpOytyLhXeWsp-YFjWko4zQkx1oi1Cm5I_DkEqfyGaQLc7fvNeYN18HbgvB7ECP7CGkUAVQ6rYCq5imPGqLKygBUac83epkwEft&usqp=CAE"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">RTX 3080</h5>
+          <p class="card-text">312 290 Ft</p>
+          <a onclick="Videokartya_details(1)" class="btn btn-primary">Részletek</a>
+          <a onclick=" Videokartya_compare(1)" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Videokartya1"></div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQWsZs_BThB4QiJPBmtJ5jZVZlPJ2Akrju8rcKH_rto8XvrixG8gZCPmKuNb7yt0baCwgEmqcfr_hYuRTIm9ElFNqY2aQRwpCkXYz5Gu-ZThuactYqAUGCdK40utYDj&usqp=CAc"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">RTX 3060</h5>
+          <p class="card-text">139 189 Ft</p>
+          <a onclick="Videokartya_details(2)" class="btn btn-primary">Részletek</a>
+          <a onclick=" Videokartya_compare(2)" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Videokartya2"></div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYv_F25Q8vmj9wjWPVatC0dKHxBOQlQRlUQuQfMK2ZVDTIKP7DUIB8kAmW7rRXeJ22cnaXxD0mmUCO-80l980O1PzBeBiU8xy9ZeiAMO0&usqp=CAc"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">RTX 4060</h5>
+          <p class="card-text">144 490 Ft</p>
+          <a onclick="Videokartya_details(3)" class="btn btn-primary">Részletek</a>
+          <a onclick=" Videokartya_compare(3)" class="btn btn-primary">Összehasonlítás</a>
+          <div id="Videokartya3"></div>
+        </div>
+      </div>
+      <h2>Memóriák:</h2>
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9pzf6qOD_rrFTX8pHA5CLLJnyv0VikMiRlgEwYy3i4vWb1q3VUAei9Q77j7G_KtXVtKwLb1FR3_NnQkT28JqzWZQ-zhYB2etie4NltpErVXtHXeyEjspbAvEItYxaeg&usqp=CAc"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">DIMM 2x8GB 3200MHz DDR4 memória </h5>
+            <p class="card-text">17 090 Ft</p>
+            <a onclick="Memoria_details(1)" class="btn btn-primary">Részletek</a>
+            <a onclick=" Memoria_compare(1)" class="btn btn-primary">Összehasonlítás</a>
+            <div id="memoria1"></div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTScZdPHuFl2kNyjW7GUDHW2lKHdd9_enEPK6aGOu5zqyknnqv0pEotpoHm6Y-0sneMZi-KIpatwgVlAaB5NOE3vKwzL9SXOxkeo5B-Mwc1BfP5kvYsjQG6wzzii1fy80IljSYhcCrS1g&usqp=CAc"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">2x16GB 4800MHz DDR5 memória </h5>
+            <p class="card-text">46 090 Ft</p>
+            <a onclick="Memoria_details(2)" class="btn btn-primary">Részletek</a>
+            <a onclick=" Memoria_compare(2)" class="btn btn-primary">Összehasonlítás</a>
+            <div id="memoria2"></div>
+          </div>
+        </div>
+
+      </div>
+      <h2>SSD:</h2>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRuqKlTEPKsh34QF3sdSwj9IqgtT0HDuY9FRuGlsBzXOBILxbyVZ4aolp7HYTxa5uuy_yVHzz_FGLuhDXmZSsW-3oUOTE22RCsaDDogQnC3OqWzYGVOV0kFxSKhFDidXVF_Fcu_ZdJb_44&usqp=CAc"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Kingston 1TB SSD </h5>
+          <p class="card-text">40 490 Ft</p>
+          <a onclick="SSD_details(1)" class="btn btn-primary">Részletek</a>
+          <div id="SSD1"></div>
+        </div>
+      </div>
+</div>
+<h2>Tápegységek:</h2>
+<div class="row">
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top"
+      src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ2oXPhOBArFL5d1AzHSdnY1PK7iQXTT1w76xbbjBDJS7WN-yHTjLY8D7tiwo9_B7qPjYiYd6GXyJhapF7B1SF_nTwXyRXzgGz_ZkqxMar3O3iJh1aLTYBfuWE7XIvaoqBazgR_uesaQ1k&usqp=CAc"
+      alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Thermaltake SMART RGB </h5>
+      <p class="card-text">31 590 Ft</p>
+      <a onclick="tapegyseg_details(1)" class="btn btn-primary">Részletek</a>
+      <a onclick=" tapegyseg_compare(1)" class="btn btn-primary">Összehasonlítás</a>
+      <div id="tapegyseg1"></div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top"
+      src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcST9YKBccMPGHXHVn8SmLN43CMpSHVMkLYZ5WhQ_o76lWAzOTrplWRI1O_FIEGj_4KjUyyV7L4G_1AD0sfcBd2nPL_hU3rh_ThqoxtZ_f4U8jnxnhXV0l1SD-Ns_WxSpc9djOvvWzUN9Q&usqp=CAc"
+      alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ASUS ROG-STRIX-850G </h5>
+      <p class="card-text">61 090 Ft</p>
+      <a onclick="tapegyseg_details(2)" class="btn btn-primary">Részletek</a>
+      <a onclick=" tapegyseg_compare(2)" class="btn btn-primary">Összehasonlítás</a>
+      <div id="tapegyseg2"></div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top"
+      src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSKGxfNTwrFgIe_9lWdakIi_yQJPZVrgcroUn8VvJyBiMcdc9_uO0lMPc-6FZUzr18swuDy6NgWS1uYVFK70Pqs8Kiry6I40JVrQjf8Y6JiwUEf9ecGvxDU5GWSipiqRjje4eVa5tBqRUw&usqp=CAc"
+      alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cooler Master Elite NEX W700 </h5>
+      <p class="card-text">38 990 Ft</p>
+      <a onclick="tapegyseg_details(3)" class="btn btn-primary">Részletek</a>
+      <a onclick=" tapegyseg_compare(3)" class="btn btn-primary">Összehasonlítás</a>
+      <div id="tapegyseg3"></div>
+    </div>
+  </div>
+</div>
+      <div id="compare"></div>
+      <div id="comments">
+
+        <div id="request-container">
+        <form id="request-form">
+            <input type="text" id="request-input" placeholder="Írd be a termék nevét">
+            <button type="submit">Igénylés</button>
+        </form>
+        <div id="requests">
+
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <script>var requestForm = document.getElementById('request-form');
+    var requestInput = document.getElementById('request-input');
+    var requests = document.getElementById('requests');
+    requestForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        var request = document.createElement('div');
+    request.className = 'request';
+        request.textContent = requestInput.value;
+        requests.appendChild(request);
+    
+        requestInput.value = '';
+    });</script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+

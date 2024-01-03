@@ -1,18 +1,107 @@
 
-.flex-container
-{
-    background-color:red;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content:center;
-    justify-content: space-around;
-    border-radius:10px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.flex-container>table
+
+
+h1, h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.card {
+  width: 18rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#recommendations {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h1
 {
-    width:400px;
-    height:500px;
-    overflow:auto;
-    margin:10px;
+  text-align: center;
+}
+body
+{
+  background-image: url(https://media.discordapp.net/attachments/1192173504523673770/1192183759404028016/abstract-white-and-gray-triangle-lines-diagonal-futuristic-background-vector.png?ex=65a826a5&is=6595b1a5&hm=6f4a9f74b1921450cfeca7b75c781964b9a36bcf44b7871a4ef8553ff4b28263&=&format=webp&quality=lossless&width=1272&height=600);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
